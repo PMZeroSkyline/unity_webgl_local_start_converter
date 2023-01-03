@@ -99,8 +99,8 @@ ipcMain.on('convert', (e, dir) => {
   //var formattedInlineLoaderText = prettier.format(inlineLoaderText, { semi: false, parser: "babel" });
   //var formattedInlineFrameworkText = prettier.format(inlineFrameworkText, { semi: false, parser: "babel" });
 
-  fs.writeFileSync(loaderPath, formattedInlineLoaderText);
-  fs.writeFileSync(frameworkPath, formattedInlineFrameworkText);
+  fs.writeFileSync(loaderPath, inlineLoaderText);
+  fs.writeFileSync(frameworkPath, inlineFrameworkText);
   fs.unlinkSync(dataPath);
   fs.unlinkSync(wasmPath);
 
