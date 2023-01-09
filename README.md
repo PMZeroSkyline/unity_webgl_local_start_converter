@@ -4,6 +4,9 @@ Convert the webgl built by unity to a version that can be directly started local
 # App
 - mac
 ![](docs/mac.png)
+- windows
+![](docs/win.png)
+
 
 - dependency
     - electron-forge
