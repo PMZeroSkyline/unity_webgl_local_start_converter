@@ -2,8 +2,8 @@
 Convert the webgl built by unity to a version that can be directly started locally without a server
 
 # compatibility 
-- macOS √
 - windows √
+- macOS √
 - Unity 2021 √ (Currently only supports unity2021)
 
 # app
