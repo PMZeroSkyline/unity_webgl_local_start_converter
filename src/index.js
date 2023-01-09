@@ -73,13 +73,13 @@ ipcMain.on('convert', (e, dir) => {
     return fs.readFileSync(path, null).toString('hex');
   }
   
-  var folderArr = dir.replace('/', '\\').split('\\');
+  var folderArr = dir.replace('\\', '/').split('/');
   var folderName = folderArr[folderArr.length - 1];
 
-  var loaderPath = dir + `\\Build\\` + folderName + `.loader.js`
-  var frameworkPath = dir + `\\Build\\` + folderName + `.framework.js`
-  var dataPath = dir + `\\Build\\` + folderName + `.data`
-  var wasmPath = dir + `\\Build\\` + folderName + `.wasm`
+  var loaderPath = dir + `/Build/` + folderName + `.loader.js`
+  var frameworkPath = dir + `/Build/` + folderName + `.framework.js`
+  var dataPath = dir + `/Build/` + folderName + `.data`
+  var wasmPath = dir + `/Build/` + folderName + `.wasm`
 
   const loaderText = fs.readFileSync(loaderPath, "utf8");
   const frameworkText = fs.readFileSync(frameworkPath, "utf8");
