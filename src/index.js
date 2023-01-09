@@ -72,14 +72,19 @@ ipcMain.on('convert', (e, dir) => {
   function get_hex(path){
     return fs.readFileSync(path, null).toString('hex');
   }
+
+  var sem = '/';
+  if(process.platform == 'win32'){
+    sem = '\\';
+  }
   
-  var folderArr = dir.replace('\\', '/').split('/');
+  var folderArr = dir.split(sem);
   var folderName = folderArr[folderArr.length - 1];
 
-  var loaderPath = dir + `/Build/` + folderName + `.loader.js`
-  var frameworkPath = dir + `/Build/` + folderName + `.framework.js`
-  var dataPath = dir + `/Build/` + folderName + `.data`
-  var wasmPath = dir + `/Build/` + folderName + `.wasm`
+  var loaderPath = dir + sem + `Build` + sem + folderName + `.loader.js`
+  var frameworkPath = dir + sem + `Build` + sem + folderName + `.framework.js`
+  var dataPath = dir + sem + `Build` + sem + folderName + `.data`
+  var wasmPath = dir + sem + `Build` + sem + folderName + `.wasm`
 
   const loaderText = fs.readFileSync(loaderPath, "utf8");
   const frameworkText = fs.readFileSync(frameworkPath, "utf8");
