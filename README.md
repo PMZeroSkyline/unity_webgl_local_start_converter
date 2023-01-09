@@ -11,7 +11,7 @@ Convert the webgl built by unity to a version that can be directly started local
     - electron-forge
     <!-- - prettier --> 
 
-# electron
+# electron-forge
 - install dependencies
 `
 npm install
