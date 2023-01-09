@@ -12,10 +12,6 @@ Convert the webgl built by unity to a version that can be directly started local
 - macOS
 ![](docs/mac.png)
 
-- dependency
-    - electron-forge
-    <!-- - prettier --> 
-
 # download
 [click to download](https://github.com/PMZeroSkyline/unity_webgl_local_start_converter/releases)
 
@@ -23,6 +19,8 @@ Convert the webgl built by unity to a version that can be directly started local
 First build unity webgl, please make sure that the publishing settings of unity are the same as the figure, use this software to select the webgl folder built by unity, and click convert. Now you can open locally
 
 # compiling
+ based on electron-forge
+    
 - install dependencies
 `
 npm install
