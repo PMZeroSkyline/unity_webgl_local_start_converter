@@ -1,6 +1,11 @@
 # unity_webgl_local_start_converter
 Convert the webgl built by unity to a version that can be directly started locally without a server
 
+# compatibility 
+- macOS √
+- windows √
+- Unity 2021 √ (Currently only supports unity2021)
+
 # app
 - windows
 ![](docs/win.png)
@@ -17,7 +22,7 @@ Convert the webgl built by unity to a version that can be directly started local
 # how to use
 First build unity webgl, please make sure that the publishing settings of unity are the same as the figure, use this software to select the webgl folder built by unity, and click convert. Now you can open locally
 
-# developer
+# compiling
 - install dependencies
 `
 npm install
